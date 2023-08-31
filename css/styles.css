@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 body {
   font-size: 16px;
   color: #fff;
@@ -6,16 +9,20 @@ body {
 }
 
 /** HEADER **/
-#header-nav {
+header{
   background-color: #f6b319;
   border-radius: 0;
   border: 0;
 }
+.navbar{
+  min-height: 80px;
+}
 
 #logo-img {
   background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
-  height: 150px;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
   margin: 10px 15px 10px 0;
 }
 
@@ -37,7 +44,7 @@ body {
 .navbar-brand a:hover, .navbar-brand a:link {
   text-decoration: none;
 }
-.navbar-brand p { /* Kosher cert */
+.navbar-header p span { /* Kosher cert */
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
@@ -54,4 +61,17 @@ body {
 .navbar-toggler .navbar-toggler-icon{
   background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(97, 18, 47, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-brand .navbar-nav .nav-link{
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  font-size: larger;
+}
+.navbar-brand .navbar-logo .material-symbols-outlined{
+  border: 5px solid black;
+  align-content: center;
+}
+.navbar-brand li{
+  display: inline;
+  text-align: center;
 }
